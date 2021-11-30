@@ -3,6 +3,10 @@ import {
     addExclamationPoints,
 } from '../functions.js';
 
+import {
+    multiplyBySeven,
+} from '../functions.js';
+
 const { test, skip } = QUnit;
 
 test('addExclamationPoints should return a string with 3 exclamation points added to the end', (expect) => {
