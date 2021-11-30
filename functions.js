@@ -29,10 +29,11 @@ Output:
 */
 
 export function multiplyBySeven(num) {
-    return true;
+    return num * 7;
+    
 }
-
-// This function should take in a number and multiply it by seven then cut the result in half
+console.log(multiplyBySeven(5));
+// This function should take in a number and multiply it by twelve then cut the result in half
 
 /* 
 Input:
@@ -46,10 +47,9 @@ Output:
 */
 
 export function multiplyBy12ThenHalve(num) {
-    return true;
+    return (num * 12) / 2;
 }
-
-
+console.log(multiplyBy12ThenHalve(4, 12, 2));
 // This function should take in three numbers, divide the first by the second, then multiply the result by the third
 
 /* 
@@ -63,10 +63,9 @@ Output:
 */
 
 export function divideThenMultiply(firstNumber, secondNumber, thirdNumber) {
-    return true;
+    return (firstNumber / secondNumber) * thirdNumber;
 }
-
-
+console.log(divideThenMultiply(12, 4, 2));
 // This function should take in three numbers and return those numbers in an array
 
 /* 
@@ -80,8 +79,9 @@ Output:
 */
 
 export function returnAsAnArray(firstNumber, secondNumber, thirdNumber) {
-    return true;
+    return [firstNumber, secondNumber, thirdNumber];
 }
+console.log(returnAsAnArray(2, 3, 4));
 
 // This function should take in three numbers and return those numbers mushed together as a string
 
@@ -96,9 +96,9 @@ Output:
 */
 
 export function returnAsAString(firstNumber, secondNumber, thirdNumber) {
-    return true;
+    return (`${firstNumber}` + `${secondNumber}` + `${thirdNumber}`) ;
 }
-
+console.log(returnAsAString(8, 4, 2));
 // This function should take in two numbers and return a greeting announcing that the sum of those numbers is today's lucky number
 
 /* 
@@ -112,9 +112,9 @@ Output:
 */
 
 export function makeLuckyGreeting(firstNumber, secondNumber) {
-    return true;
+    return `Hello! Your lucky number for the day is ${firstNumber + secondNumber}.`;
 }
-
+console.log(makeLuckyGreeting(3, 4));
 // This function should take an array and return the second item in the array
 
 /* 
@@ -129,7 +129,7 @@ Output:
 */
 
 export function getSecondItem(array) {
-    return true;
+    return array [1];
 }
 
 // This function should take an array and return the LAST item in the array, no matter the array's length
@@ -146,7 +146,7 @@ Output:
 */
 
 export function getLastItem(array) {
-    return true;
+    return [1];
 }
 
 // Bonus question:
