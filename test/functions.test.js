@@ -6,11 +6,12 @@ import {
     divideThenMultiply,
     returnAsAnArray, 
     returnAsAString,
-    makeLuckyGreeting
+    makeLuckyGreeting,
+    getSecondItem,
 } from '../functions.js';
 
 import {
-    getSecondItem,
+    getLastItem,
 } from '../functions.js';
 
 const { test, skip } = QUnit;
@@ -108,4 +109,11 @@ test('getSecondItem should take an array and return the second item of that arra
     const actual1 = getSecondItem(['kiwi', 'apple', 'orange', 'plum']);
 
     expect.deepEqual(actual1, expected1, ' should return the second item of the array');
+});
+
+test('getLastItem should take an array and display the last item, no matter the length of the array', (expect) => {
+    const expected1 = 'plum';
+    const actual1 = getLastItem(['kiwi', 'apple', 'orange', 'plum']);
+
+    expect.deepEqual(actual1, expected1, 'should return the last array item');
 });
