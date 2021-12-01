@@ -151,7 +151,7 @@ export function getLastItem(array) {
     let arrayLen = array.length;
     return index[arrayLen - 1];
 }
-console.log(getLastItem());
+
 // Bonus question:
 
 // This function should make a random number between 0 and 5. 
