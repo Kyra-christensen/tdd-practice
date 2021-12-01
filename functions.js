@@ -128,11 +128,11 @@ Output:
 
 */
 
-export function getSecondItem(array) {
+export function getSecondItem() {
     let index = ['kiwi', 'apple', 'orange', 'plum'];
     return index[1];
 }
-console.log(getSecondItem());
+
 // This function should take an array and return the LAST item in the array, no matter the array's length
 
 /* 
